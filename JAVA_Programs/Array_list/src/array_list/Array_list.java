@@ -15,12 +15,12 @@ public class Array_list {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ArrayList<Integer> gavas_array=new ArrayList<Integer>();
+        HashSet<Integer> gavas_array=new HashSet<Integer>();
         gavas_array.add(1);
-        gavas_array.add(2);
+        gavas_array.add(2);     
         Iterator itr=gavas_array.iterator();  
-while(itr.hasNext()){  
-System.out.println(itr.next());  
+      while(itr.hasNext()){  
+       System.out.println(itr.next());  
 }  
 
     }
