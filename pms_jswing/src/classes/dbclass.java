@@ -11,7 +11,7 @@ package classes;
 import java.sql.*;
 public class dbclass 
 {
-public String connection_string="jdbc:mysql://localhost:3306/pms?zeroDateTimeBehavior=CONVERT_TO_NULL";
+public String connection_string="jdbc:mysql://localhost:3306/pms";
 public String tableinsertupdatedelete(String query)
 {
     try

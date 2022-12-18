@@ -329,12 +329,19 @@ public class frm_usersetting extends javax.swing.JFrame {
         password.setText("");
         email.setText("");
     }
+public static void removeAllRows(javax.swing.JTable table) {
 
+        DefaultTableModel model = (DefaultTableModel) table.getModel();
+
+        for (int row = 0; row < table.getRowCount(); row++) {
+            model.removeRow(row);
+        }
+
+    }
     //fetch 
     private void fetch() {
         ArrayList<usersetting> array_usersetting = new ArrayList<>();
-        array_usersetting.clear();
-      tblusersetting.repaint();
+       removeAllRows(tblusersetting);
         try {
            usersetting Usersetting=new usersetting();
             ResultSet rs = Usersetting.retriveall_usersetting();
